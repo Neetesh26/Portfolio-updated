@@ -1,0 +1,146 @@
+@media screen and (max-width: 1400px) {
+  #profile {
+    height: 83vh;
+    margin-bottom: 6rem;
+  }
+  .about-containers {
+    flex-wrap: wrap;
+  }
+  #contact,
+  #projects {
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+  #experience,
+  .experience-details-container {
+    margin-top: 2rem;
+  }
+  #profile,
+  .section-container {
+    display: block;
+  }
+  .arrow {
+    display: none;
+  }
+  section,
+  .section-container {
+    height: fit-content;
+  }
+  section {
+    margin: 0 5%;
+  }
+  .section__pic-container {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+  }
+  .about-containers {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #contact,
+  footer {
+    height: 40vh;
+    /* width: 100vw; */
+    position: relative;
+    /* background-color: aqua; */
+  }
+  #profile {
+    height: 83vh;
+    margin-bottom: 0;
+  }
+  #article-container {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+  }
+  article {
+    font-size: 1rem;
+  }
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+  .about-containers,
+  .contact-info-upper-container,
+  .btn-container {
+    flex-wrap: wrap;
+  }
+  .contact-info-container {
+    margin: 0;
+    /* width: 100%; */
+    /* position:absolute; */
+    font-size: .9rem;
+  }
+  .contact-info-container:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* gap: rem; */
+    margin: .4rem;
+    /* background-color: blue; */
+  }
+  
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem;
+  }
+  .contact-info-container p a:first-child {
+    font-size: 12px;
+  }
+  .contact-info-container img{
+    height: 25px;
+    width: 25px;
+  }
+  .experience-sub-title {
+    font-size: 1.25rem;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  .section__pic-container {
+    width: auto;
+    height: 40vw;
+    justify-content: center;
+  }
+  .section__pic-container img{
+    border-radius: 50%;
+    /* width: auto; */
+    /* height: 46vw; */
+    justify-content: center;
+    object-fit: cover;
+    object-position: top;
+    background-color: bisque;
+  }
+  .section__text__p2 {
+    font-size: 1.25rem;
+  }
+  .title {
+    font-size: 1.66rem;
+  }
+  .text-container {
+    text-align: justify;
+  }
+
+  /* #contact {
+    margin-top: 50px 8000px;
+  } */
+}
