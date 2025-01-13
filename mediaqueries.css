@@ -54,6 +54,7 @@
     /* width: 100vw; */
     position: relative;
     /* background-color: aqua; */
+    margin-top: 40px;
   }
   #profile {
     height: 83vh;
@@ -78,6 +79,11 @@
   .contact-info-upper-container,
   .btn-container {
     flex-wrap: wrap;
+    /* margin-top: 25px; */
+  }
+  .contact-info-upper-containe {
+    flex-wrap: wrap;
+    margin-top: 50px;
   }
   .contact-info-container {
     margin: 0;
@@ -120,7 +126,12 @@
     width: auto;
     height: 40vw;
     justify-content: center;
+    margin-bottom: 80px;
   }
+    .section-container {
+      margin-top: 40px;
+    }
+  
   .section__pic-container img{
     border-radius: 50%;
     /* width: auto; */
