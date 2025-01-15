@@ -64,12 +64,13 @@
   }
   #contact,
   footer {
-    height: 40vh;
+    height: 22vh;
     /* width: 100vw; */
     position: relative;
     /* background-color: aqua; */
     margin-top: 40px;
   }
+  
   #profile {
     height: 83vh;
     margin-bottom: 15px;
@@ -87,7 +88,8 @@
   }
   footer nav {
     height: fit-content;
-    margin-bottom: 3rem;
+    margin-top: 20vh;
+    margin-bottom: 1.8rem;
   }
   .about-containers,
   .contact-info-upper-container,
