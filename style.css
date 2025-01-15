@@ -355,7 +355,10 @@ section {
 }
 .text-container p {
   letter-spacing: 1px;
-  padding: 0px 30px;
+  word-spacing: .5px;
+  padding: 0px 35px;
+  font-weight: 600;
+  text-transform: capitalize;
   /* background-color: aqua; */
 }
 .section-container {

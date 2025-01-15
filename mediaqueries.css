@@ -56,6 +56,10 @@
   .section__text .desc{
     font-size: 1.0rem;
     margin: 8px 0px;
+    line-height: 1rem;
+    letter-spacing: 1.5px;
+    word-spacing: 1px;
+    list-style: armenian;
     /* background-color: aqua; */
   }
   #contact,
@@ -83,7 +87,7 @@
   }
   footer nav {
     height: fit-content;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
   }
   .about-containers,
   .contact-info-upper-container,
@@ -160,8 +164,16 @@
   .title {
     font-size: 1.66rem;
   }
-  .text-container {
-    text-align: justify;
+  .text-container p {
+    text-align: center;
+    /* background-color: rgb(161, 0, 91); */
+    letter-spacing: 1.5px;
+    word-spacing: 1px;
+    list-style: armenian;
+    line-height: 1.2rem;
+    font-weight: bold;
+    padding: 2px 3px;
+    font-size: 0.9rem;
   }
 
   /* #contact {
