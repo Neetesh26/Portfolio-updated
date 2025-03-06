@@ -21,6 +21,10 @@ html {
   scroll-behavior: smooth;
 }
 
+/* ::selection{
+  background-color:  rgb(3, 253, 3);
+  
+} */
 #dot {
   color: rgb(3, 253, 3);
   font-weight: 600;
@@ -70,7 +74,6 @@ a:hover {
   text-decoration: underline;
   text-underline-offset: 0.5rem;
   text-decoration-color: rgb(3, 253, 3);
-  ;
 }
 
 .logo {
@@ -224,12 +227,12 @@ section {
 }
 
 .section__text__p2 {
-  font-size: 1.75rem;
+  font-size: 1.40rem;
   margin-bottom: 1rem;
 }
-.section__text .desc{
+.section__text .desc {
   letter-spacing: 1px;
-  font-size: 1.0rem;
+  font-size: 1rem;
   text-transform: capitalize;
   margin-bottom: 8px;
 }
@@ -355,7 +358,7 @@ section {
 }
 .text-container p {
   letter-spacing: 1px;
-  word-spacing: .5px;
+  word-spacing: 0.5px;
   padding: 0px 35px;
   font-weight: 600;
   text-transform: capitalize;
@@ -368,7 +371,6 @@ section {
 #about .section__text__p1,
 .title {
   letter-spacing: 1px;
-  
 }
 .section__pic-container {
   height: 400px;
@@ -525,71 +527,69 @@ footer p {
   text-align: center;
 }
 
-
 /* Animation home */
- #wrapper {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            z-index: 999;
-        }
+#wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}
 
-        .loader {
-            width: 100%;
-            height: 100vh;
-            background-color: rgb(0, 0, 0);
-        }
+.loader {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+}
 
-        .loader .topheading {
-            position: absolute;
-            top: 5%;
-            left: 50%;
-            transform: translate(-50%, 0);
-        }
+.loader .topheading {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
 
-        .topheading h5 {
-            text-transform: uppercase;
-            font-size: 11px;
-            font-weight: 300;
-            text-align: center;
-            color: #fff;
-        }
-        .loader h1{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 4vw;
-            font-weight: 500;
-
-        }
-        .loader h1 span{
-          font-family: "Poppins", sans-serif;        }
-        .elem2 {
-            width: 100%;
-            position: absolute;
-            bottom: 0;
-            background-color:#fff;
-            height: 0vh;
-        }
-        .reveal .parent{
-            /* background-color: red; */
-            overflow: hidden;
-            display: block;
-        }
-        .reveal .parent .child{
-            display: block;
-            /* background-color: blue;
+.topheading h5 {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 300;
+  text-align: center;
+  color: #fff;
+}
+.loader h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4vw;
+  font-weight: 500;
+}
+.loader h1 span {
+  font-family: "Poppins", sans-serif;
+}
+.elem2 {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: #fff;
+  height: 0vh;
+}
+.reveal .parent {
+  /* background-color: red; */
+  overflow: hidden;
+  display: block;
+}
+.reveal .parent .child {
+  display: block;
+  /* background-color: blue;
             overflow-x: hidden; */
-
-        }
-        .child span{
-            display: inline-block;
-        }
-        .elem3 {
-            width: 100%;
-            position: absolute;
-            bottom: 0;
-            background-color: #14CF93;
-            height: 0;
-        }
+}
+.child span {
+  display: inline-block;
+}
+.elem3 {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: #14cf93;
+  height: 0;
+}
