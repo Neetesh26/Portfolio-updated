@@ -411,6 +411,9 @@ section {
   gap: 2.5rem;
   justify-content: space-around;
 }
+/* .article-container img{
+  
+} */
 #article-container {
   display: flex;
   text-align: initial;
