@@ -43,7 +43,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="relative py-28 px-6 max-w-7xl mx-auto min-h-screen flex flex-col justify-center items-center">
+    <section id="contact" className="relative py-20 sm:py-28 px-4 sm:px-6 max-w-7xl mx-auto min-h-screen flex flex-col justify-center items-center">
       {/* Toast Notification */}
       <AnimatePresence>
         {copied && (
@@ -51,9 +51,9 @@ const Contact = () => {
             initial={{ opacity: 0, y: 50, scale: 0.9 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.9 }}
-            className="fixed bottom-8 right-8 z-[99999] bg-[#14CF93] text-black px-6 py-3.5 rounded-2xl shadow-2xl flex items-center gap-3 font-bold text-sm"
+            className="fixed bottom-8 right-8 z-[99999] bg-[#14CF93] text-black px-5 py-3 rounded-2xl shadow-2xl flex items-center gap-3 font-bold text-xs sm:text-sm"
           >
-            <Check className="w-5 h-5 stroke-[3]" />
+            <Check className="w-4 h-4 stroke-[3]" />
             <span>Email copied to clipboard!</span>
           </motion.div>
         )}
@@ -65,9 +65,9 @@ const Contact = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: '-80px' }}
         transition={{ duration: 0.6 }}
-        className="text-center mb-16 space-y-2 w-full"
+        className="text-center mb-12 sm:mb-16 space-y-2 w-full"
       >
-        <p className="text-[#14CF93] text-sm font-semibold tracking-widest uppercase flex items-center justify-center gap-2">
+        <p className="text-[#14CF93] text-xs sm:text-sm font-semibold tracking-widest uppercase flex items-center justify-center gap-2">
           <Sparkles className="w-4 h-4" />
           <span>Get in Touch</span>
         </p>
@@ -76,8 +76,8 @@ const Contact = () => {
         </h2>
       </motion.div>
 
-      {/* Perfectly Aligned Grid Container */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 max-w-6xl w-full items-stretch justify-center">
+      {/* Responsive Grid Container */}
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 max-w-6xl w-full items-stretch justify-center">
         {/* Contact Info Column (Left) */}
         <div className="lg:col-span-5 flex flex-col justify-between space-y-4">
           
@@ -89,13 +89,13 @@ const Contact = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="flex-1"
           >
-            <TiltCard className="p-5 flex flex-row items-center justify-between gap-4 flex-nowrap h-full group">
-              <div className="flex items-center gap-3.5 min-w-0 flex-1">
-                <div className="w-12 h-12 rounded-2xl bg-[#14CF93]/10 border border-[#14CF93]/30 flex items-center justify-center text-[#14CF93] shrink-0 group-hover:scale-110 transition-transform">
-                  <Mail className="w-5 h-5" />
+            <TiltCard className="p-4 sm:p-5 flex flex-row items-center justify-between gap-3 sm:gap-4 flex-nowrap h-full group">
+              <div className="flex items-center gap-3 min-w-0 flex-1">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-[#14CF93]/10 border border-[#14CF93]/30 flex items-center justify-center text-[#14CF93] shrink-0 group-hover:scale-110 transition-transform">
+                  <Mail className="w-4 h-4 sm:w-5 sm:h-5" />
                 </div>
                 <div className="min-w-0 flex-1">
-                  <span className="text-[11px] text-gray-400 font-mono block uppercase tracking-wider">Direct Mail</span>
+                  <span className="text-[10px] sm:text-[11px] text-gray-400 font-mono block uppercase tracking-wider">Direct Mail</span>
                   <a
                     href="mailto:neeteshprajapati009@gmail.com"
                     className="text-white font-semibold text-xs sm:text-sm hover:text-[#14CF93] transition-colors truncate block"
@@ -108,7 +108,7 @@ const Contact = () => {
 
               <button
                 onClick={handleCopyEmail}
-                className="p-3 rounded-xl bg-white/5 hover:bg-[#14CF93]/20 text-gray-300 hover:text-[#14CF93] transition-all shrink-0 border border-white/10"
+                className="p-2.5 rounded-xl bg-white/5 hover:bg-[#14CF93]/20 text-gray-300 hover:text-[#14CF93] transition-all shrink-0 border border-white/10"
                 title="Copy Email to Clipboard"
               >
                 {copied ? <Check className="w-4 h-4 text-[#14CF93]" /> : <Copy className="w-4 h-4" />}
@@ -124,18 +124,18 @@ const Contact = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="flex-1"
           >
-            <TiltCard className="p-5 flex flex-row items-center justify-between gap-4 flex-nowrap h-full group">
-              <div className="flex items-center gap-3.5 min-w-0 flex-1">
-                <div className="w-12 h-12 rounded-2xl bg-[#14CF93]/10 border border-[#14CF93]/30 flex items-center justify-center text-[#14CF93] shrink-0 group-hover:scale-110 transition-transform">
-                  <Linkedin className="w-5 h-5" />
+            <TiltCard className="p-4 sm:p-5 flex flex-row items-center justify-between gap-3 sm:gap-4 flex-nowrap h-full group">
+              <div className="flex items-center gap-3 min-w-0 flex-1">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-[#14CF93]/10 border border-[#14CF93]/30 flex items-center justify-center text-[#14CF93] shrink-0 group-hover:scale-110 transition-transform">
+                  <Linkedin className="w-4 h-4 sm:w-5 sm:h-5" />
                 </div>
                 <div className="min-w-0 flex-1">
-                  <span className="text-[11px] text-gray-400 font-mono block uppercase tracking-wider">LinkedIn Profile</span>
+                  <span className="text-[10px] sm:text-[11px] text-gray-400 font-mono block uppercase tracking-wider">LinkedIn Profile</span>
                   <a
                     href="https://www.linkedin.com/in/neetesh-prajapati-b44469254/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-white font-semibold text-sm hover:text-[#14CF93] transition-colors truncate block"
+                    className="text-white font-semibold text-xs sm:text-sm hover:text-[#14CF93] transition-colors truncate block"
                   >
                     Neetesh Prajapati
                   </a>
@@ -146,7 +146,7 @@ const Contact = () => {
                 href="https://www.linkedin.com/in/neetesh-prajapati-b44469254/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-4 py-2 rounded-xl bg-white/5 hover:bg-[#14CF93] text-gray-300 hover:text-black font-semibold text-xs transition-all shrink-0 border border-white/10 whitespace-nowrap"
+                className="px-3.5 py-1.5 sm:py-2 rounded-xl bg-white/5 hover:bg-[#14CF93] text-gray-300 hover:text-black font-semibold text-xs transition-all shrink-0 border border-white/10 whitespace-nowrap"
               >
                 Connect
               </a>
@@ -161,18 +161,18 @@ const Contact = () => {
             transition={{ duration: 0.6, delay: 0.25 }}
             className="flex-1"
           >
-            <TiltCard className="p-5 flex flex-row items-center justify-between gap-4 flex-nowrap h-full group">
-              <div className="flex items-center gap-3.5 min-w-0 flex-1">
-                <div className="w-12 h-12 rounded-2xl bg-[#FFA116]/10 border border-[#FFA116]/30 flex items-center justify-center text-[#FFA116] shrink-0 group-hover:scale-110 transition-transform">
-                  <LeetCodeIcon className="w-5 h-5" />
+            <TiltCard className="p-4 sm:p-5 flex flex-row items-center justify-between gap-3 sm:gap-4 flex-nowrap h-full group">
+              <div className="flex items-center gap-3 min-w-0 flex-1">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-[#FFA116]/10 border border-[#FFA116]/30 flex items-center justify-center text-[#FFA116] shrink-0 group-hover:scale-110 transition-transform">
+                  <LeetCodeIcon className="w-4 h-4 sm:w-5 sm:h-5" />
                 </div>
                 <div className="min-w-0 flex-1">
-                  <span className="text-[11px] text-gray-400 font-mono block uppercase tracking-wider">LeetCode Profile</span>
+                  <span className="text-[10px] sm:text-[11px] text-gray-400 font-mono block uppercase tracking-wider">LeetCode Profile</span>
                   <a
                     href="https://leetcode.com/u/neeteshprajapati009/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-white font-semibold text-sm hover:text-[#FFA116] transition-colors truncate block"
+                    className="text-white font-semibold text-xs sm:text-sm hover:text-[#FFA116] transition-colors truncate block"
                   >
                     @neeteshprajapati009
                   </a>
@@ -183,7 +183,7 @@ const Contact = () => {
                 href="https://leetcode.com/u/neeteshprajapati009/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-4 py-2 rounded-xl bg-white/5 hover:bg-[#FFA116] text-gray-300 hover:text-black font-semibold text-xs transition-all shrink-0 border border-white/10 whitespace-nowrap"
+                className="px-3.5 py-1.5 sm:py-2 rounded-xl bg-white/5 hover:bg-[#FFA116] text-gray-300 hover:text-black font-semibold text-xs transition-all shrink-0 border border-white/10 whitespace-nowrap"
               >
                 Solve DSA
               </a>
@@ -198,20 +198,20 @@ const Contact = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="flex-1"
           >
-            <TiltCard className="p-5 flex flex-row items-center justify-between gap-4 flex-nowrap h-full group">
-              <div className="flex items-center gap-3.5 min-w-0 flex-1">
-                <div className="w-12 h-12 rounded-2xl bg-[#14CF93]/10 border border-[#14CF93]/30 flex items-center justify-center text-[#14CF93] shrink-0 group-hover:scale-110 transition-transform">
-                  <MapPin className="w-5 h-5" />
+            <TiltCard className="p-4 sm:p-5 flex flex-row items-center justify-between gap-3 sm:gap-4 flex-nowrap h-full group">
+              <div className="flex items-center gap-3 min-w-0 flex-1">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-[#14CF93]/10 border border-[#14CF93]/30 flex items-center justify-center text-[#14CF93] shrink-0 group-hover:scale-110 transition-transform">
+                  <MapPin className="w-4 h-4 sm:w-5 sm:h-5" />
                 </div>
                 <div className="min-w-0 flex-1">
-                  <span className="text-[11px] text-gray-400 font-mono block uppercase tracking-wider">Location & Preference</span>
-                  <p className="text-white font-semibold text-sm">
+                  <span className="text-[10px] sm:text-[11px] text-gray-400 font-mono block uppercase tracking-wider">Location & Preference</span>
+                  <p className="text-white font-semibold text-xs sm:text-sm truncate">
                     Madhya Pradesh, India
                   </p>
                 </div>
               </div>
 
-              <span className="px-3 py-1.5 rounded-xl bg-[#14CF93]/10 border border-[#14CF93]/30 text-[#14CF93] text-[11px] font-mono shrink-0 whitespace-nowrap">
+              <span className="px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-xl bg-[#14CF93]/10 border border-[#14CF93]/30 text-[#14CF93] text-[10px] sm:text-[11px] font-mono shrink-0 whitespace-nowrap">
                 On-site • Hybrid • Remote
               </span>
             </TiltCard>
@@ -223,7 +223,7 @@ const Contact = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="glass-panel p-5 rounded-3xl border-l-4 border-l-[#14CF93] space-y-1.5"
+            className="glass-panel p-4 sm:p-5 rounded-3xl border-l-4 border-l-[#14CF93] space-y-1.5"
           >
             <div className="flex items-center gap-2 text-[#14CF93] font-bold text-xs sm:text-sm">
               <Sparkles className="w-4 h-4" />
@@ -243,80 +243,80 @@ const Contact = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="lg:col-span-7 flex flex-col"
         >
-          <TiltCard className="p-8 sm:p-10 h-full flex flex-col justify-between relative overflow-hidden">
+          <TiltCard className="p-6 sm:p-10 h-full flex flex-col justify-between relative overflow-hidden">
             {formSubmitted ? (
               <motion.div
                 initial={{ scale: 0.8, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
-                className="text-center py-16 space-y-4 my-auto"
+                className="text-center py-12 sm:py-16 space-y-4 my-auto"
               >
-                <div className="w-16 h-16 rounded-full bg-[#14CF93]/20 border border-[#14CF93] text-[#14CF93] flex items-center justify-center mx-auto">
-                  <Check className="w-8 h-8 stroke-[3]" />
+                <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-[#14CF93]/20 border border-[#14CF93] text-[#14CF93] flex items-center justify-center mx-auto">
+                  <Check className="w-7 h-7 sm:w-8 sm:h-8 stroke-[3]" />
                 </div>
-                <h3 className="text-2xl font-bold text-white">Message Sent Successfully!</h3>
-                <p className="text-gray-400 text-sm max-w-md mx-auto">
+                <h3 className="text-xl sm:text-2xl font-bold text-white">Message Sent Successfully!</h3>
+                <p className="text-gray-400 text-xs sm:text-sm max-w-md mx-auto">
                   Thank you for reaching out. Neetesh will get back to you promptly.
                 </p>
               </motion.div>
             ) : (
-              <form onSubmit={handleSubmit} className="space-y-5 flex-1 flex flex-col justify-between">
-                <div className="space-y-4">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div className="space-y-1.5">
-                      <label className="text-xs font-mono text-gray-300 uppercase tracking-wider">Your Name</label>
+              <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-5 flex-1 flex flex-col justify-between">
+                <div className="space-y-3.5 sm:space-y-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 sm:gap-4">
+                    <div className="space-y-1 sm:space-y-1.5">
+                      <label className="text-[10px] sm:text-xs font-mono text-gray-300 uppercase tracking-wider">Your Name</label>
                       <input
                         type="text"
                         required
                         placeholder="John Doe"
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-[#14CF93] focus:ring-1 focus:ring-[#14CF93] transition-all text-sm"
+                        className="w-full px-3.5 sm:px-4 py-2.5 sm:py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-[#14CF93] focus:ring-1 focus:ring-[#14CF93] transition-all text-xs sm:text-sm"
                       />
                     </div>
 
-                    <div className="space-y-1.5">
-                      <label className="text-xs font-mono text-gray-300 uppercase tracking-wider">Your Email</label>
+                    <div className="space-y-1 sm:space-y-1.5">
+                      <label className="text-[10px] sm:text-xs font-mono text-gray-300 uppercase tracking-wider">Your Email</label>
                       <input
                         type="email"
                         required
                         placeholder="john@example.com"
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-[#14CF93] focus:ring-1 focus:ring-[#14CF93] transition-all text-sm"
+                        className="w-full px-3.5 sm:px-4 py-2.5 sm:py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-[#14CF93] focus:ring-1 focus:ring-[#14CF93] transition-all text-xs sm:text-sm"
                       />
                     </div>
                   </div>
 
-                  <div className="space-y-1.5">
-                    <label className="text-xs font-mono text-gray-300 uppercase tracking-wider">Subject</label>
+                  <div className="space-y-1 sm:space-y-1.5">
+                    <label className="text-[10px] sm:text-xs font-mono text-gray-300 uppercase tracking-wider">Subject</label>
                     <input
                       type="text"
                       required
                       placeholder="Software Engineer Role / Project Collaboration"
                       value={formData.subject}
                       onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-                      className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-[#14CF93] focus:ring-1 focus:ring-[#14CF93] transition-all text-sm"
+                      className="w-full px-3.5 sm:px-4 py-2.5 sm:py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-[#14CF93] focus:ring-1 focus:ring-[#14CF93] transition-all text-xs sm:text-sm"
                     />
                   </div>
 
-                  <div className="space-y-1.5">
-                    <label className="text-xs font-mono text-gray-300 uppercase tracking-wider">Message</label>
+                  <div className="space-y-1 sm:space-y-1.5">
+                    <label className="text-[10px] sm:text-xs font-mono text-gray-300 uppercase tracking-wider">Message</label>
                     <textarea
                       required
-                      rows={5}
+                      rows={4}
                       placeholder="Hello Neetesh, I'd like to discuss..."
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                      className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-[#14CF93] focus:ring-1 focus:ring-[#14CF93] transition-all text-sm resize-none"
+                      className="w-full px-3.5 sm:px-4 py-2.5 sm:py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-[#14CF93] focus:ring-1 focus:ring-[#14CF93] transition-all text-xs sm:text-sm resize-none"
                     />
                   </div>
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full py-4 mt-2 rounded-xl bg-[#14CF93] text-black font-bold text-base flex items-center justify-center gap-2.5 hover:bg-[#00F59B] transition-all shadow-[0_0_25px_rgba(20,207,147,0.5)] hover:scale-[1.02] active:scale-[0.98]"
+                  className="w-full py-3.5 sm:py-4 mt-2 rounded-xl bg-[#14CF93] text-black font-bold text-sm sm:text-base flex items-center justify-center gap-2.5 hover:bg-[#00F59B] transition-all shadow-[0_0_25px_rgba(20,207,147,0.5)] hover:scale-[1.02] active:scale-[0.98]"
                 >
-                  <Send className="w-5 h-5" />
+                  <Send className="w-4 h-4 sm:w-5 sm:h-5" />
                   <span>Send Message</span>
                 </button>
               </form>
