@@ -21,7 +21,7 @@ function App() {
   const [isResumeOpen, setIsResumeOpen] = useState(false);
 
   return (
-    <div className="relative min-h-screen bg-[#0a0d14] text-white selection:bg-[#14CF93] selection:text-black">
+    <div className="relative min-h-screen w-full max-w-full overflow-x-hidden bg-[#0a0d14] text-white selection:bg-[#14CF93] selection:text-black">
       {/* Top Scroll Progress Line */}
       <ScrollProgress />
 

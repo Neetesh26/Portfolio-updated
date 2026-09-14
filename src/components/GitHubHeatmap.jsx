@@ -17,26 +17,26 @@ const GitHubHeatmap = () => {
   };
 
   return (
-    <section id="github-activity" className="relative py-20 px-6 max-w-7xl mx-auto">
+    <section id="github-activity" className="relative py-16 sm:py-20 px-4 sm:px-6 max-w-7xl mx-auto">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
       >
-        <TiltCard className="p-8 sm:p-10 border-t-4 border-t-[#14CF93] space-y-6">
+        <TiltCard className="p-5 sm:p-8 md:p-10 border-t-4 border-t-[#14CF93] space-y-6">
           {/* Header Row */}
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-white/10 pb-6">
             <div className="flex items-center gap-3">
-              <div className="p-3 rounded-2xl bg-[#14CF93]/10 text-[#14CF93]">
-                <Github className="w-7 h-7" />
+              <div className="p-2.5 sm:p-3 rounded-2xl bg-[#14CF93]/10 text-[#14CF93] shrink-0">
+                <Github className="w-6 h-6 sm:w-7 sm:h-7" />
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-white flex items-center gap-2">
-                  <span>Open Source & GitHub Consistency</span>
-                  <Sparkles className="w-4 h-4 text-[#14CF93]" />
+                <h3 className="text-xl sm:text-2xl font-bold text-white flex items-center gap-2">
+                  <span>Open Source & GitHub</span>
+                  <Sparkles className="w-4 h-4 text-[#14CF93] shrink-0" />
                 </h3>
-                <span className="text-xs text-gray-400 font-mono">
+                <span className="text-[11px] sm:text-xs text-gray-400 font-mono">
                   @Neetesh26 • Continuous Integration & Daily Commits
                 </span>
               </div>
@@ -46,7 +46,7 @@ const GitHubHeatmap = () => {
               href="https://github.com/Neetesh26"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-5 py-2.5 rounded-full bg-[#14CF93]/10 border border-[#14CF93]/30 text-[#14CF93] font-bold text-xs hover:bg-[#14CF93] hover:text-black transition-all flex items-center gap-2 self-start sm:self-center"
+              className="px-4 sm:px-5 py-2 sm:py-2.5 rounded-full bg-[#14CF93]/10 border border-[#14CF93]/30 text-[#14CF93] font-bold text-xs hover:bg-[#14CF93] hover:text-black transition-all flex items-center gap-2 self-start sm:self-center shrink-0"
             >
               <span>View GitHub Profile</span>
               <ExternalLink className="w-4 h-4" />
@@ -54,36 +54,36 @@ const GitHubHeatmap = () => {
           </div>
 
           {/* Quick Metrics */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 pt-2">
-            <div className="p-4 rounded-2xl bg-white/[0.02] border border-white/5 flex items-center gap-3">
-              <Flame className="w-6 h-6 text-[#14CF93]" />
-              <div>
-                <div className="text-xl font-extrabold text-white">218+</div>
-                <div className="text-[11px] text-gray-400 font-mono">2025 Contributions</div>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-4 pt-2">
+            <div className="p-3 sm:p-4 rounded-2xl bg-white/[0.02] border border-white/5 flex items-center gap-2.5 sm:gap-3">
+              <Flame className="w-5 h-5 sm:w-6 sm:h-6 text-[#14CF93] shrink-0" />
+              <div className="min-w-0">
+                <div className="text-lg sm:text-xl font-extrabold text-white truncate">218+</div>
+                <div className="text-[10px] sm:text-[11px] text-gray-400 font-mono truncate">2025 Contributions</div>
               </div>
             </div>
 
-            <div className="p-4 rounded-2xl bg-white/[0.02] border border-white/5 flex items-center gap-3">
-              <GitCommit className="w-6 h-6 text-[#00F59B]" />
-              <div>
-                <div className="text-xl font-extrabold text-white">100%</div>
-                <div className="text-[11px] text-gray-400 font-mono">Consistent Pushes</div>
+            <div className="p-3 sm:p-4 rounded-2xl bg-white/[0.02] border border-white/5 flex items-center gap-2.5 sm:gap-3">
+              <GitCommit className="w-5 h-5 sm:w-6 sm:h-6 text-[#00F59B] shrink-0" />
+              <div className="min-w-0">
+                <div className="text-lg sm:text-xl font-extrabold text-white truncate">100%</div>
+                <div className="text-[10px] sm:text-[11px] text-gray-400 font-mono truncate">Consistent Pushes</div>
               </div>
             </div>
 
-            <div className="p-4 rounded-2xl bg-white/[0.02] border border-white/5 flex items-center gap-3">
-              <GitPullRequest className="w-6 h-6 text-[#14CF93]" />
-              <div>
-                <div className="text-xl font-extrabold text-white">GSSoC '25</div>
-                <div className="text-[11px] text-gray-400 font-mono">Campus Ambassador</div>
+            <div className="p-3 sm:p-4 rounded-2xl bg-white/[0.02] border border-white/5 flex items-center gap-2.5 sm:gap-3">
+              <GitPullRequest className="w-5 h-5 sm:w-6 sm:h-6 text-[#14CF93] shrink-0" />
+              <div className="min-w-0">
+                <div className="text-lg sm:text-xl font-extrabold text-white truncate">GSSoC '25</div>
+                <div className="text-[10px] sm:text-[11px] text-gray-400 font-mono truncate">Campus Ambassador</div>
               </div>
             </div>
 
-            <div className="p-4 rounded-2xl bg-white/[0.02] border border-white/5 flex items-center gap-3">
-              <Sparkles className="w-6 h-6 text-[#00F59B]" />
-              <div>
-                <div className="text-xl font-extrabold text-white">Rank 1 🏆</div>
-                <div className="text-[11px] text-gray-400 font-mono">Web Battle Winner</div>
+            <div className="p-3 sm:p-4 rounded-2xl bg-white/[0.02] border border-white/5 flex items-center gap-2.5 sm:gap-3">
+              <Sparkles className="w-5 h-5 sm:w-6 sm:h-6 text-[#00F59B] shrink-0" />
+              <div className="min-w-0">
+                <div className="text-lg sm:text-xl font-extrabold text-white truncate">Rank 1 🏆</div>
+                <div className="text-[10px] sm:text-[11px] text-gray-400 font-mono truncate">Web Battle Winner</div>
               </div>
             </div>
           </div>

@@ -20,10 +20,10 @@ const ResumeModal = ({ isOpen, onClose }) => {
           animate={{ scale: 1, y: 0 }}
           exit={{ scale: 0.9, y: 30 }}
           onClick={(e) => e.stopPropagation()}
-          className="bg-[#0e131f] border border-white/20 rounded-3xl max-w-4xl w-full h-[85vh] flex flex-col overflow-hidden shadow-2xl relative"
+          className="bg-[#0e131f] border border-white/20 rounded-2xl sm:rounded-3xl max-w-4xl w-full h-[88vh] flex flex-col overflow-hidden shadow-2xl relative"
         >
           {/* Modal Header */}
-          <div className="p-5 border-b border-white/10 flex items-center justify-between bg-white/[0.02]">
+          <div className="p-3.5 sm:p-5 border-b border-white/10 flex items-center justify-between gap-2 bg-white/[0.02]">
             <div className="flex items-center gap-3">
               <div className="p-2.5 rounded-xl bg-[#14CF93]/10 text-[#14CF93]">
                 <FileText className="w-5 h-5" />

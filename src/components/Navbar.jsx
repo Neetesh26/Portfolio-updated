@@ -59,7 +59,7 @@ const Navbar = ({ onOpenTerminal, onOpenResume }) => {
           : 'bg-transparent py-6'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 flex items-center justify-between">
         {/* Brand Logo */}
         <a
           href="#"
@@ -67,10 +67,10 @@ const Navbar = ({ onOpenTerminal, onOpenResume }) => {
           onClick={playClickSound}
           className="flex items-center gap-2 group"
         >
-          <div className="w-9 h-9 rounded-xl bg-[#14CF93]/10 border border-[#14CF93]/30 flex items-center justify-center text-[#14CF93] group-hover:scale-105 transition-transform">
-            <Code2 className="w-5 h-5" />
+          <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-[#14CF93]/10 border border-[#14CF93]/30 flex items-center justify-center text-[#14CF93] group-hover:scale-105 transition-transform">
+            <Code2 className="w-4 h-4 sm:w-5 sm:h-5" />
           </div>
-          <span className="text-2xl font-bold tracking-wider text-white">
+          <span className="text-xl sm:text-2xl font-bold tracking-wider text-white">
             Neetesh<span className="text-[#14CF93] font-black drop-shadow-[0_0_8px_#14CF93]">.</span>
           </span>
         </a>
@@ -151,17 +151,28 @@ const Navbar = ({ onOpenTerminal, onOpenResume }) => {
           </div>
         </nav>
 
-        {/* Mobile Hamburger Button */}
-        <button
-          onClick={() => {
-            playClickSound();
-            setIsOpen(!isOpen);
-          }}
-          className="md:hidden text-white p-2 focus:outline-none rounded-lg bg-white/5 border border-white/10"
-          aria-label="Toggle menu"
-        >
-          {isOpen ? <X className="w-6 h-6 text-[#14CF93]" /> : <Menu className="w-6 h-6" />}
-        </button>
+        {/* Mobile Header Actions */}
+        <div className="flex md:hidden items-center gap-2">
+          <button
+            onClick={toggleSound}
+            className="text-white p-2 focus:outline-none rounded-lg bg-white/5 border border-white/10"
+            aria-label="Toggle Sound"
+            title={muted ? 'Unmute' : 'Mute'}
+          >
+            {muted ? <VolumeX className="w-5 h-5 text-red-400" /> : <Volume2 className="w-5 h-5 text-[#14CF93]" />}
+          </button>
+
+          <button
+            onClick={() => {
+              playClickSound();
+              setIsOpen(!isOpen);
+            }}
+            className="text-white p-2 focus:outline-none rounded-lg bg-white/5 border border-white/10"
+            aria-label="Toggle menu"
+          >
+            {isOpen ? <X className="w-6 h-6 text-[#14CF93]" /> : <Menu className="w-6 h-6" />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile Drawer Menu */}
@@ -174,7 +185,7 @@ const Navbar = ({ onOpenTerminal, onOpenResume }) => {
             transition={{ duration: 0.3 }}
             className="md:hidden bg-[#0e131f]/95 backdrop-blur-xl border-b border-white/10 overflow-hidden"
           >
-            <div className="flex flex-col px-6 py-6 space-y-4">
+            <div className="flex flex-col px-5 py-5 space-y-3.5">
               {navLinks.map((link) => (
                 <a
                   key={link.name}
@@ -183,14 +194,14 @@ const Navbar = ({ onOpenTerminal, onOpenResume }) => {
                     playClickSound();
                     setIsOpen(false);
                   }}
-                  className="text-lg text-gray-200 hover:text-[#14CF93] py-2 tracking-wide border-b border-white/5 flex items-center justify-between"
+                  className="text-base text-gray-200 hover:text-[#14CF93] py-1.5 tracking-wide border-b border-white/5 flex items-center justify-between"
                 >
                   <span>{link.name}</span>
                   <span className="text-xs text-[#14CF93] font-mono">→</span>
                 </a>
               ))}
 
-              <div className="grid grid-cols-2 gap-3 pt-2">
+              <div className="grid grid-cols-2 gap-2.5 pt-2">
                 <button
                   onClick={() => {
                     playClickSound();
@@ -219,7 +230,7 @@ const Navbar = ({ onOpenTerminal, onOpenResume }) => {
               <a
                 href="#contact"
                 onClick={() => setIsOpen(false)}
-                className="w-full text-center py-3 rounded-xl bg-[#14CF93] text-black font-semibold mt-2 shadow-[0_0_15px_rgba(20,207,147,0.3)]"
+                className="w-full text-center py-3 rounded-xl bg-[#14CF93] text-black font-semibold mt-1 shadow-[0_0_15px_rgba(20,207,147,0.3)]"
               >
                 Hire Me
               </a>

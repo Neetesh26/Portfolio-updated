@@ -89,8 +89,8 @@ const Contact = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="flex-1"
           >
-            <TiltCard className="p-4 sm:p-5 flex flex-row items-center justify-between gap-3 sm:gap-4 flex-nowrap h-full group">
-              <div className="flex items-center gap-3 min-w-0 flex-1">
+            <TiltCard className="p-4 sm:p-5 flex flex-row items-center justify-between gap-3 sm:gap-4 h-full group">
+              <div className="flex items-center gap-2.5 sm:gap-3 min-w-0 flex-1">
                 <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-[#14CF93]/10 border border-[#14CF93]/30 flex items-center justify-center text-[#14CF93] shrink-0 group-hover:scale-110 transition-transform">
                   <Mail className="w-4 h-4 sm:w-5 sm:h-5" />
                 </div>
@@ -98,7 +98,7 @@ const Contact = () => {
                   <span className="text-[10px] sm:text-[11px] text-gray-400 font-mono block uppercase tracking-wider">Direct Mail</span>
                   <a
                     href="mailto:neeteshprajapati009@gmail.com"
-                    className="text-white font-semibold text-xs sm:text-sm hover:text-[#14CF93] transition-colors truncate block"
+                    className="text-white font-semibold text-xs sm:text-sm hover:text-[#14CF93] transition-colors truncate block max-w-[160px] xs:max-w-[230px] sm:max-w-full"
                     title="neeteshprajapati009@gmail.com"
                   >
                     neeteshprajapati009@gmail.com
@@ -108,7 +108,7 @@ const Contact = () => {
 
               <button
                 onClick={handleCopyEmail}
-                className="p-2.5 rounded-xl bg-white/5 hover:bg-[#14CF93]/20 text-gray-300 hover:text-[#14CF93] transition-all shrink-0 border border-white/10"
+                className="p-2 sm:p-2.5 rounded-xl bg-white/5 hover:bg-[#14CF93]/20 text-gray-300 hover:text-[#14CF93] transition-all shrink-0 border border-white/10"
                 title="Copy Email to Clipboard"
               >
                 {copied ? <Check className="w-4 h-4 text-[#14CF93]" /> : <Copy className="w-4 h-4" />}
@@ -124,8 +124,8 @@ const Contact = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="flex-1"
           >
-            <TiltCard className="p-4 sm:p-5 flex flex-row items-center justify-between gap-3 sm:gap-4 flex-nowrap h-full group">
-              <div className="flex items-center gap-3 min-w-0 flex-1">
+            <TiltCard className="p-4 sm:p-5 flex flex-row items-center justify-between gap-3 sm:gap-4 h-full group">
+              <div className="flex items-center gap-2.5 sm:gap-3 min-w-0 flex-1">
                 <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-[#14CF93]/10 border border-[#14CF93]/30 flex items-center justify-center text-[#14CF93] shrink-0 group-hover:scale-110 transition-transform">
                   <Linkedin className="w-4 h-4 sm:w-5 sm:h-5" />
                 </div>
@@ -146,7 +146,7 @@ const Contact = () => {
                 href="https://www.linkedin.com/in/neetesh-prajapati-b44469254/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-3.5 py-1.5 sm:py-2 rounded-xl bg-white/5 hover:bg-[#14CF93] text-gray-300 hover:text-black font-semibold text-xs transition-all shrink-0 border border-white/10 whitespace-nowrap"
+                className="px-3 sm:px-3.5 py-1.5 sm:py-2 rounded-xl bg-white/5 hover:bg-[#14CF93] text-gray-300 hover:text-black font-semibold text-xs transition-all shrink-0 border border-white/10 whitespace-nowrap"
               >
                 Connect
               </a>
@@ -161,8 +161,8 @@ const Contact = () => {
             transition={{ duration: 0.6, delay: 0.25 }}
             className="flex-1"
           >
-            <TiltCard className="p-4 sm:p-5 flex flex-row items-center justify-between gap-3 sm:gap-4 flex-nowrap h-full group">
-              <div className="flex items-center gap-3 min-w-0 flex-1">
+            <TiltCard className="p-4 sm:p-5 flex flex-row items-center justify-between gap-3 sm:gap-4 h-full group">
+              <div className="flex items-center gap-2.5 sm:gap-3 min-w-0 flex-1">
                 <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-[#FFA116]/10 border border-[#FFA116]/30 flex items-center justify-center text-[#FFA116] shrink-0 group-hover:scale-110 transition-transform">
                   <LeetCodeIcon className="w-4 h-4 sm:w-5 sm:h-5" />
                 </div>
@@ -183,7 +183,7 @@ const Contact = () => {
                 href="https://leetcode.com/u/neeteshprajapati009/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-3.5 py-1.5 sm:py-2 rounded-xl bg-white/5 hover:bg-[#FFA116] text-gray-300 hover:text-black font-semibold text-xs transition-all shrink-0 border border-white/10 whitespace-nowrap"
+                className="px-3 sm:px-3.5 py-1.5 sm:py-2 rounded-xl bg-white/5 hover:bg-[#FFA116] text-gray-300 hover:text-black font-semibold text-xs transition-all shrink-0 border border-white/10 whitespace-nowrap"
               >
                 Solve DSA
               </a>
@@ -198,8 +198,8 @@ const Contact = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="flex-1"
           >
-            <TiltCard className="p-4 sm:p-5 flex flex-row items-center justify-between gap-3 sm:gap-4 flex-nowrap h-full group">
-              <div className="flex items-center gap-3 min-w-0 flex-1">
+            <TiltCard className="p-4 sm:p-5 flex flex-col xs:flex-row items-start xs:items-center justify-between gap-2 sm:gap-4 h-full group">
+              <div className="flex items-center gap-2.5 sm:gap-3 min-w-0 flex-1">
                 <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-[#14CF93]/10 border border-[#14CF93]/30 flex items-center justify-center text-[#14CF93] shrink-0 group-hover:scale-110 transition-transform">
                   <MapPin className="w-4 h-4 sm:w-5 sm:h-5" />
                 </div>
@@ -211,7 +211,7 @@ const Contact = () => {
                 </div>
               </div>
 
-              <span className="px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-xl bg-[#14CF93]/10 border border-[#14CF93]/30 text-[#14CF93] text-[10px] sm:text-[11px] font-mono shrink-0 whitespace-nowrap">
+              <span className="px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-xl bg-[#14CF93]/10 border border-[#14CF93]/30 text-[#14CF93] text-[10px] sm:text-[11px] font-mono shrink-0">
                 On-site • Hybrid • Remote
               </span>
             </TiltCard>

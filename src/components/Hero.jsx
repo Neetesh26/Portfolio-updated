@@ -142,7 +142,7 @@ const Hero = ({ onOpenResume, onOpenTerminal }) => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.6 }}
-            className="flex flex-wrap gap-3 sm:gap-4 justify-center lg:justify-start pt-1 sm:pt-2 w-full sm:w-auto"
+            className="flex flex-col xs:flex-row flex-wrap gap-2.5 sm:gap-4 justify-center lg:justify-start pt-1 sm:pt-2 w-full sm:w-auto"
           >
             <button
               onClick={() => {
@@ -150,7 +150,7 @@ const Hero = ({ onOpenResume, onOpenTerminal }) => {
                 onOpenResume();
               }}
               onMouseEnter={playHoverSound}
-              className="flex-1 sm:flex-none px-6 sm:px-7 py-3 sm:py-3.5 rounded-full bg-[#14CF93] text-black font-bold text-xs sm:text-sm flex items-center justify-center gap-2 hover:bg-[#00F59B] transition-all hover:shadow-[0_0_30px_rgba(20,207,147,0.6)] hover:scale-105 active:scale-95 group"
+              className="w-full xs:w-auto px-5 sm:px-7 py-3 sm:py-3.5 rounded-full bg-[#14CF93] text-black font-bold text-xs sm:text-sm flex items-center justify-center gap-2 hover:bg-[#00F59B] transition-all hover:shadow-[0_0_30px_rgba(20,207,147,0.6)] hover:scale-105 active:scale-95 group whitespace-nowrap"
             >
               <Eye className="w-4 h-4 sm:w-5 sm:h-5 group-hover:scale-110 transition-transform" />
               <span>Preview CV</span>
@@ -162,7 +162,7 @@ const Hero = ({ onOpenResume, onOpenTerminal }) => {
                 onOpenTerminal();
               }}
               onMouseEnter={playHoverSound}
-              className="flex-1 sm:flex-none px-6 sm:px-7 py-3 sm:py-3.5 rounded-full bg-white/5 hover:bg-white/10 text-white font-semibold text-xs sm:text-sm border border-white/15 flex items-center justify-center gap-2 transition-all hover:border-[#14CF93]/50 hover:scale-105 active:scale-95"
+              className="w-full xs:w-auto px-5 sm:px-7 py-3 sm:py-3.5 rounded-full bg-white/5 hover:bg-white/10 text-white font-semibold text-xs sm:text-sm border border-white/15 flex items-center justify-center gap-2 transition-all hover:border-[#14CF93]/50 hover:scale-105 active:scale-95 whitespace-nowrap"
             >
               <Terminal className="w-4 h-4 sm:w-5 sm:h-5 text-[#14CF93]" />
               <span>Launch CLI</span>
@@ -172,7 +172,7 @@ const Hero = ({ onOpenResume, onOpenTerminal }) => {
               href="#contact"
               onMouseEnter={playHoverSound}
               onClick={playClickSound}
-              className="flex-1 sm:flex-none px-6 sm:px-7 py-3 sm:py-3.5 rounded-full bg-white/5 hover:bg-white/10 text-white font-semibold text-xs sm:text-sm border border-white/15 flex items-center justify-center gap-2 transition-all hover:border-[#14CF93]/50 hover:scale-105 active:scale-95"
+              className="w-full xs:w-auto px-5 sm:px-7 py-3 sm:py-3.5 rounded-full bg-white/5 hover:bg-white/10 text-white font-semibold text-xs sm:text-sm border border-white/15 flex items-center justify-center gap-2 transition-all hover:border-[#14CF93]/50 hover:scale-105 active:scale-95 whitespace-nowrap"
             >
               <Mail className="w-4 h-4 sm:w-5 sm:h-5 text-[#14CF93]" />
               <span>Contact</span>

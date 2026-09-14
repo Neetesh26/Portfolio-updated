@@ -128,7 +128,7 @@ const TerminalModal = ({ isOpen, onClose }) => {
           animate={{ scale: 1, y: 0 }}
           exit={{ scale: 0.9, y: 30 }}
           onClick={(e) => e.stopPropagation()}
-          className="bg-[#0c1017] border border-[#14CF93]/40 rounded-3xl max-w-3xl w-full h-[600px] flex flex-col overflow-hidden shadow-[0_0_50px_rgba(20,207,147,0.25)] relative font-mono"
+          className="bg-[#0c1017] border border-[#14CF93]/40 rounded-2xl sm:rounded-3xl max-w-3xl w-full h-[85vh] sm:h-[600px] max-h-[90vh] flex flex-col overflow-hidden shadow-[0_0_50px_rgba(20,207,147,0.25)] relative font-mono"
         >
           {/* Terminal Titlebar */}
           <div className="p-4 bg-[#080a0f] border-b border-white/10 flex items-center justify-between">

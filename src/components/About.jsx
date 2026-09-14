@@ -81,7 +81,7 @@ const About = () => {
               <span>Executive Professional Summary</span>
             </h3>
             
-            <p className="text-gray-300 text-sm sm:text-base md:text-lg leading-relaxed tracking-wide text-justify sm:text-left">
+            <p className="text-gray-300 text-sm sm:text-base md:text-lg leading-relaxed tracking-wide text-left">
               Computer Science graduate (CGPA: 8.1/10.0) and Full Stack Developer with hands-on experience building and optimizing web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js). Skilled in developing responsive user interfaces, implementing REST APIs, integrating backend services, optimizing application performance, and deploying applications using AWS and Docker. Seeking Software Engineer or Full Stack Developer opportunities to build scalable and user-focused products.
             </p>
           </TiltCard>

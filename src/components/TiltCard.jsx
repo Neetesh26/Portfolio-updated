@@ -9,6 +9,8 @@ const TiltCard = ({ children, className = '', maxTilt = 12, spotlightColor = 'rg
 
   const handleMouseMove = (e) => {
     if (!cardRef.current) return;
+    if (typeof window !== 'undefined' && window.matchMedia('(pointer: coarse)').matches) return;
+
     const rect = cardRef.current.getBoundingClientRect();
     const width = rect.width;
     const height = rect.height;
